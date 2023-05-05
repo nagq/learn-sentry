@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="theme-color" content="#000000" />
+  </head>
+
+  <body>
+    <script src="./scripts/002.js"></script>
+    <script type="text/javascript">
+      // 无法捕获
+      new Image().src = 'https://react.docschina.org/images/home/community/react_india_sunil.webp2'
+
+      // 可以捕获
+      document.body.appendChild(
+        new Image().src = 'https://react.docschina.org/images/home/community/react_india_sunil.webp1'
+      );
+    </script>
+  </body>
+</html>

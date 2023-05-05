@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="theme-color" content="#000000" />
+    <title>Demo</title>
+    <style>
+      th,
+      td {
+        padding: 5px 10px;
+        text-align: center;
+      }
+      tbody th {
+        text-align: left;
+      }
+
+      a {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th></th>
+          <th>语法错误</th>
+          <th>运行时错误</th>
+          <th>资源加载错误</th>
+          <th>http请求错误</th>
+          <th>promise异步</th>
+          <th>setTimeout异步</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>try/catch</th>
+          <td>
+            <a href="./001.html">false</a>
+          </td>
+          <td>
+            <a href="./002.html">true</a>
+          </td>
+          <td>
+            <a href="./003.html">false</a>
+          </td>
+          <td>
+            <a href="./004.html">false</a>
+          </td>
+          <td>
+            <a href="./005.html">false</a>
+          </td>
+          <td>
+            <a href="./006.html">false</a>
+          </td>
+        </tr>
+        <tr>
+          <th>window.onerror</th>
+          <td>
+            <a href="./101.html">true</a>
+          </td>
+          <td>
+            <a href="./102.html">true</a>
+          </td>
+          <td>
+            <a href="./103.html">false</a>
+          </td>
+          <td>
+            <a href="./104.html">false</a>
+          </td>
+          <td>
+            <a href="./105.html">false</a>
+          </td>
+          <td>
+            <a href="./106.html">true</a>
+          </td>
+        </tr>
+        <tr>
+          <th>window.addEventListener('error', fn, true);</th>
+          <td>
+            <a href="./201.html">true</a>
+          </td>
+          <td>
+            <a href="./202.html">true</a>
+          </td>
+          <td>
+            <a href="./203.html">true</a>
+          </td>
+          <td>
+            <a href="./204.html">false</a>
+          </td>
+          <td>
+            <a href="./205.html">false</a>
+          </td>
+          <td>
+            <a href="./206.html">true</a>
+          </td>
+        </tr>
+        <tr>
+          <th>Image onerror</th>
+          <td>-</td>
+          <td>-</td>
+          <td>
+            <a href="./303.html">true</a>
+          </td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <th>window.addEventListener('unhandledrejection', fn);</th>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>
+            <a href="./405.html">true</a>
+          </td>
+          <td>-</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <br />
+    <a href="./107.html">跨域问题</a>
+    <br />
+    <a href="./107-01.html">跨域问题 try/catch绕过</a>
+    <br />
+    <a href="./107-02.html">Sentry中劫持SetTimeout</a>
+  </body>
+</html>
